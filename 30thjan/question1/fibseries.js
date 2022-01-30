@@ -13,4 +13,4 @@ arr = [];
         }
     }
     
-    console.log(arr[n]);
+    document.write(arr[n]);
