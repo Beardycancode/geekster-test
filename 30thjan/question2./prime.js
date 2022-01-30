@@ -1,18 +1,18 @@
 var n = prompt("enter range");
 n=parseInt(n);
-var count;
+var condition;
 
 for(i=2;i<=n;i++)
 {
-    count = true;
+    condition = true;
     for(j=2;j<=parseInt(i/2);j++)
     {
         if(i%j==0)
         {
-            count=false;
+            condition=false;
             break;
         }
     }
-    if(count)
+    if(condition)
     document.write(i+" ");
 }
