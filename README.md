@@ -20,3 +20,4 @@ Q1) create website using tags learnt till now
 
 
 Q1) Design a tribute page for "Lata Mangeshkar Ji" 
+hosted link- https://beardycancode.github.io/geekster-test/13%20feb/Nightingale_of_India.html
