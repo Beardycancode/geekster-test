@@ -1,0 +1,77 @@
+body{
+  margin: 4%;
+}
+*{}
+.box{
+  display: inline;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+.popup, .popup2 ,.popup3, .popup4,.popup5{
+  
+  display: flex;
+  justify-content: start;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.popup .popuptext,.popup2 .popuptext2 ,.popup3 .popuptext3, .popup4 .popuptext4,.popup5 .popuptext5{
+  visibility: hidden;
+  width: 160px;
+  color: rgb(20, 19, 19);
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -80px;
+}
+
+
+.popup .popuptext::after,.popup2 .popuptext2::after,.popup3 .popuptext3::after, .popup4 .popuptext4::after, .popup5 .popuptext5::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+
+.popup .show,.popup2 .show,.popup3 .show, .popup4 .show,.popup5 .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+
+
+@-webkit-keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}
